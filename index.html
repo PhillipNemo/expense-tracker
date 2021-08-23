@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Expense traker</title>
+</head>
+<body>
+    <div class="content">
+            <h1>Expense Traker</h1>
+            <h4>Add A New Item:</h4>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <div class="flexed-table">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount">
+            </div>
+            <div class="btn-container">
+                  <button id="button">Add Expense</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="tbody">
+                    <tr id="tRow">
+                        <td>Mc Donald</td>
+                        <td>21 07 2021</td>
+                        <td>$25</td>
+                        <td><button onclick="deleteRow()">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
